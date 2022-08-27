@@ -3,20 +3,20 @@
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Nunito Sans';
   font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: #000000;
-  font-size: 25px;
-}
-section {
-  padding: 20px;
+  color: #fbfbfb;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+}
+
+.container{
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .main {
@@ -25,41 +25,10 @@ section {
 .footer {
   flex: 0 0 auto;
 }
-
-.container {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-  border: 1px solid #000000;
-  position: relative;
-}
-.view-rightsidemenu {
-  position: fixed;
-  right: 0;
-  top: 100px;
-  border: 2px solid #9e9b9b;
-  color: #9e9b9b;
-  padding: 5px;
-  border-radius: 20px 2px 2px 2px;
-  cursor: pointer;
-}
 .d-none {
-  display: none!important;
+  display: none;
 }
 .d-block{
-  display: block!important;
-  opacity: 1!important;
-}
-.page-count {
-  display: none;
-  position: absolute;
-  top: 9px;
-  right: 14px;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 30px;
-  color: #d18929;
-  @media (max-width: 500px){
-    display: block;
-  }
+  display: block;
+  opacity: 1;
 }

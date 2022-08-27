@@ -7,14 +7,44 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
   </head>
 
   <body>
-    
+    <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <a href="#" class="header__logo">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#header__logo"></use>
+              </svg>
+            </a>
+            <div class="header__search">
+              <input type="text" class="search">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#header--top--search"></use>
+              </svg>
+            </div>
+            <a href="tel:+78008008080" class="header__phone">+7 (800) 800–80–80</a>
+            <div class="header__social">
+              <a href="#" class="header__whatsapp">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#header--top--whatsapp"></use>
+                </svg>
+              </a>
+              <a href="#" class="header__tg">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#header--top--tg"></use>
+                </svg>
+              </a>
+            </div>
+            <a href="#" class="header__request-btn">
+              Оставить заявку
+            </a>
+          </div>
+        </div>
+    </header>
+
     <script src="js/main.min.js"></script>
   </body>
 </html>

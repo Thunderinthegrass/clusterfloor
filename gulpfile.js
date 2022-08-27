@@ -25,7 +25,7 @@ function cleanDist() {
 }
 
 function svgSprites() {
-  return src("app/img/svg/**.svg")
+  return src("app/img/svg/**/**.svg")
     .pipe(
       svgSprite({
         mode: {
