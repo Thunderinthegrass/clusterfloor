@@ -1,0 +1,43 @@
+.recommend {
+  padding-top: 168px;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 70px;
+  }
+  &__item {
+    max-width: 279px;
+    width: 100%;
+    height: 337px;
+    margin-bottom: 21px;
+    position: relative;
+    &-name {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 15px;
+    }
+    &-link {
+      position: relative;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: #fbfbfb;
+      padding-right: 41px;
+      &::after{
+        @extend %ba;
+        right: 0;
+        top: 0;
+        width: 32px;
+        height: 25px;
+        background-image: url(../../../img/svg/recommend/arrow.svg);
+      }
+    }
+  }
+  &__info {
+    position: absolute;
+    bottom: 28px;
+    left: 14px;
+  }
+}

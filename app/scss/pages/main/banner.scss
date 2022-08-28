@@ -1,0 +1,55 @@
+.header {
+  &__banner {
+    background: linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding-top: 227px;
+      padding-bottom: 348px;
+    }
+  }
+  &__title {
+    font-family: "RebelTypeDog";
+    font-size: 76px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: 46px;
+  }
+  &__btn-wrapper{
+    position: absolute;
+    bottom: 182px;
+    left: -40px;
+  }
+  &__submit-btn {
+    position: relative;
+    width: 335px;
+    height: 133px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+    &::after {
+      position: absolute;
+      content: "Оставить заявку";
+      left: 50%;
+      top: 50%;
+      transform: translateX(-52%) translateY(-37%);
+      font-size: 24px;
+      line-height: 33px;
+      color: #fbfbfb;
+      white-space: nowrap;
+      transition: .3s;
+    }
+    &:hover{
+      transform: rotate(9deg);
+      &::after{
+        transform: translateX(-52%) translateY(-37%) rotate(-9deg);
+      }
+    }
+  }
+}
