@@ -1,0 +1,27 @@
+.peculiar {
+  position: relative;
+  height: 1030px;
+  &__title {
+    font-size: 183.726px;
+    line-height: 220px;
+    letter-spacing: 0.05em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .container{
+    position: relative;
+  }
+  .board{
+    position: absolute;
+    width: 1292px;
+    top: 190px;;
+    left: 50%;
+    transform: translateX(-48%);
+  }
+  .bubble{
+    img{
+      width: 234px;
+      height: 234px;
+    }
+  }
+}
