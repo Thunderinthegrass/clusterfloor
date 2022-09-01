@@ -265,6 +265,104 @@ h2 {
   cursor: pointer;
 }
 
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #1f2023;
+}
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer h6 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.footer li {
+  margin-bottom: 4px;
+}
+.footer__item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__logo {
+  margin-bottom: 16px;
+}
+.footer__logo svg {
+  width: 219px;
+  height: 55px;
+}
+.footer__phone {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fbfbfb;
+  margin-bottom: 8px;
+}
+.footer__mail {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fbfbfb;
+}
+.footer .catalog__link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fbfbfb;
+}
+.footer .buyer__link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fbfbfb;
+}
+.footer .about__link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fbfbfb;
+}
+.footer .about .dashed {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  border-bottom: dashed;
+}
+.footer__icons-row {
+  margin-bottom: 5px;
+}
+.footer__icons-row svg {
+  width: 24px;
+  height: 24px;
+}
+.footer__icons-row a:first-child {
+  margin-right: 8px;
+}
+.footer .copyright {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #777777;
+  text-align: center;
+  padding-top: 31px;
+}
+.footer .copyright span {
+  display: inline-block;
+  margin-right: 40px;
+}
+
 .header__banner {
   background-image: url(../img/header-slider/slide1.png), -o-linear-gradient(235.55deg, #2A3A62 1.39%, #18223B 79.65%);
   background-image: url(../img/header-slider/slide1.png), linear-gradient(214.45deg, #2A3A62 1.39%, #18223B 79.65%);
@@ -1150,7 +1248,20 @@ h2 {
   margin-bottom: 25px;
 }
 .form__left input:nth-child(2) {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+}
+.form__left .agreement {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fbfbfb;
+}
+.form__left .agreement a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fbfbfb;
+  text-decoration: underline;
 }
 .form__btn {
   background: #393e4d;
@@ -1160,6 +1271,7 @@ h2 {
   color: #fbfbfb;
   width: 100%;
   height: 81px;
+  margin-bottom: 40px;
   text-align: center;
   border: 1px solid;
   -o-border-image: -o-linear-gradient(left, #22bafb, #64eeb4, #fff5dd, #c8f3f9, #184cd1);
