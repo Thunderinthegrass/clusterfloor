@@ -1333,6 +1333,12 @@ h2 {
   -webkit-transform: translateZ(1px);
           transform: translateZ(1px);
 }
+
+.swiper-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 @supports (-webkit-appearance:none){
 .header .nav-btn{background-image:url(../../img/svg/header/nav/Icon.svg)}
 .header__banner{background-image:url(../img/header-slider/slide1.webp), -o-linear-gradient(235.55deg, #2A3A62 1.39%, #18223B 79.65%)}
