@@ -22,8 +22,8 @@
               <use xlink:href="img/sprite/sprite.svg#header--top--logo"></use>
             </svg>
           </a>
-          <div class="header__search">
-            <input type="text" class="search" />
+          <div class="header__search search">
+            <input type="text" class="search__input" />
             <button class="search__btn">
               <svg>
                 <use
@@ -31,6 +31,37 @@
                 ></use>
               </svg>
             </button>
+            <div class="search__results">
+              <div class="search__results-inner">
+                <a href="#" class="search__result">
+                  <div class="search__result-img">
+                    <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                  </div>
+                  <div class="search__result-name">
+                    <p>Cluster Floor Stone ZH-81042-4</p>
+                  </div>
+                </a>
+                <a href="#" class="search__result">
+                  <div class="search__result-img">
+                    <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                  </div>
+                  <div class="search__result-name">
+                    <p>Cluster Floor Stone ZH-81042-4</p>
+                  </div>
+                </a>
+                <a href="#" class="search__result">
+                  <div class="search__result-img">
+                    <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                  </div>
+                  <div class="search__result-name">
+                    <p>Cluster Floor Stone ZH-81042-4</p>
+                  </div>
+                </a>
+              </div>
+              <div class="search__results-all">
+                <a href="#" class="all-results-link">Посмотреть все результаты</a>
+              </div>
+            </div>
           </div>
           <a href="tel:+78008008080" class="header__phone"
             >+7 (800) 800–80–80</a
@@ -50,6 +81,58 @@
             </a>
           </div>
           <a href="#" class="header__request-btn"> Оставить заявку </a>
+        </div>
+        <div class="header__nav_mobile nav-mobile">
+          <input id="nav-mobile__btn" type="checkbox"/>
+          <label for="nav-mobile__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="nav-mobile__inner">
+            <ul class="nav-mobile__list">
+              <li class="nav-mobile__item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a href="#">Где купить</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a href="#">Акции</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a href="#">Покупателю</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a href="#">Сотрудничество</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a href="#">Информация</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a href="#">О бренде</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <a href="tel:+78008008080" class="phone__mobile">+7 (800) 800–80–80</a>
+            <div class="social__mobile">
+              <a href="#" class="header__whatsapp">
+                <svg>
+                  <use
+                    xlink:href="img/sprite/sprite.svg#header--top--whatsapp"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#" class="header__tg">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#header--top--tg"></use>
+                </svg>
+              </a>
+            </div>
+            <button class="request-btn__mobile">Оставить заявку</button>
+          </div>
         </div>
       </div>
       <nav class="header__nav nav">
@@ -83,45 +166,139 @@
           </ul>
         </div>
       </nav>
-    </header>
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="header__banner">
-        <div class="container">
-          <h1 class="header__title">
-            Виниловые полы <br />
-            высокого качества
-          </h1>
-          <div class="header__btn-wrapper">
-            <button class="header__submit-btn">
-              <img src="img/svg/header/banner/button.svg" alt="">
-            </button>
+      <!-- <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="header__banner banner1">
+              <div class="container">
+                <h1 class="header__title">
+                  Виниловые полы <br />
+                  высокого качества
+                </h1>
+                <div class="header__btn-wrapper">
+                  <button class="header__submit-btn">
+                    <img src="img/svg/header/banner/button.svg" alt="оставить заявку">
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="header__banner">
-        <div class="container">
-          <h1 class="header__title">
-            Виниловые полы <br />
-            высокого качества
-          </h1>
-          <div class="header__btn-wrapper">
-            <button class="header__submit-btn">
-              <img src="img/svg/header/banner/button.svg" alt="">
-            </button>
+          <div class="swiper-slide">
+            <div class="header__banner banner2">
+              <div class="container">
+                <h1 class="header__title">
+                  SPC ламинат
+                </h1>
+                <div class="parameters">
+                  <div class="parameter parameter_1">
+                    <p class="parameter__title">Толщина</p>
+                    <p class="parameter__text">5 мм</p>
+                  </div>
+                  <div class="parameter parameter_2">
+                    <p class="parameter__title">Встроенная подложка</p>
+                    <p class="parameter__text">1 мм</p>
+                  </div>
+                  <div class="parameter parameter_3">
+                    <p class="parameter__title">Негорючий материал</p>
+                    <p class="parameter__text">КМ2</p>
+                  </div>
+                  <div class="parameter parameter_4">
+                    <p class="parameter__title">Укладка на больших площадях</p>
+                    <p class="parameter__text">без порожков</p>
+                  </div>
+                </div>
+                <div class="header__btn-wrapper">
+                  <button class="header__submit-btn">
+                    <img src="img/svg/header/banner/button.svg" alt="оставить заявку">
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+          <div class="swiper-slide">
+            <div class="header__banner banner3">
+              <div class="container">
+                <h1 class="header__title">
+                  Замковая LVT плитка
+                </h1>
+                <div class="parameters">
+                  <div class="parameter parameter_1">
+                    <p class="parameter__title">Толщина</p>
+                    <p class="parameter__text">5 мм</p>
+                  </div>
+                  <div class="parameter parameter_2">
+                    <p class="parameter__title">Монтаж</p>
+                    <p class="parameter__text">Удобный</p>
+                  </div>
+                  <div class="parameter parameter_3">
+                    <p class="parameter__title">Негорючий материал</p>
+                    <p class="parameter__text">КМ2</p>
+                  </div>
+                  <div class="parameter parameter_4">
+                    <p class="parameter__title">Область применения</p>
+                    <p class="parameter__text">Коммерческие помещения</p>
+                  </div>
+                  <div class="parameter parameter_5">
+                    <p class="parameter__title">Повышенная</p>
+                    <p class="parameter__text">Защита от выгорания</p>
+                  </div>
+                </div>
+                <div class="header__btn-wrapper">
+                  <button class="header__submit-btn">
+                    <img src="img/svg/header/banner/button.svg" alt="оставить заявку">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="header__banner banner4">
+              <div class="container">
+                <h1 class="header__title">
+                  Клевая LVT плитка
+                </h1>
+                <div class="parameters">
+                  <div class="parameter parameter_1">
+                    <p class="parameter__title">Толщина</p>
+                    <p class="parameter__text">2,5 мм</p>
+                  </div>
+                  <div class="parameter parameter_2">
+                    <p class="parameter__title">Монтаж</p>
+                    <p class="parameter__text">Удобный</p>
+                  </div>
+                  <div class="parameter parameter_3">
+                    <p class="parameter__title">Негорючий материал</p>
+                    <p class="parameter__text">КМ2</p>
+                  </div>
+                  <div class="parameter parameter_4">
+                    <p class="parameter__title">Область применения</p>
+                    <p class="parameter__text">Коммерческие помещения</p>
+                  </div>
+                </div>
+                <div class="header__btn-wrapper">
+                  <button class="header__submit-btn">
+                    <img src="img/svg/header/banner/button.svg" alt="оставить заявку">
+                  </button>
+                </div>
+                <div class="ellips_1">
+                  
+                </div>
+                <div class="ellips_2">
 
-    <!-- <div class="swiper-button-prev"><img src="img/svg/header/banner/slider-arrow.svg" alt=""></div>
-    <div class="swiper-button-next"><img src="img/svg/header/banner/slider-arrow.svg" alt=""></div> -->
-  </div>
-</div>
-    <main class="main">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+          <img src="img/svg/header/banner/slider-arrow.svg" alt="назад">
+        </div>
+        <div class="swiper-button-next">
+          <img src="img/svg/header/banner/slider-arrow.svg" alt="вперед">
+        </div>
+      </div> -->
+    </header>
+    <!-- <main class="main">
       <section class="types">
         <div class="container">
           <a href="#" class="types__item">
@@ -559,7 +736,7 @@
       <div class="copyright">
         <p><span>Copyright 2021 - ClasterFloor.ru</span><span>Все права защищены</span></p>
       </div>
-    </footer>
+    </footer> -->
     <script src="js/main.min.js"></script>
   </body>
 </html>
