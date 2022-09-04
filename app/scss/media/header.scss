@@ -1,62 +1,89 @@
-.header{
-  @media (max-width: 1210px){
-    &__request-btn{
+.header {
+  @media (max-width: 1210px) {
+    &__request-btn {
       position: static;
       margin-left: 20px;
     }
-    &__top{
-      .container{
+    &__top {
+      .container {
         justify-content: space-between;
       }
     }
-    &__logo{
+    &__logo {
       margin-right: 20px;
     }
-    &__search{
+    &__search {
       margin-right: 20px;
     }
   }
-  @media (max-width: 1136px){
-    &__logo{
+  @media (max-width: 1136px) {
+    &__logo {
       margin-right: 10px;
     }
-    &__search{
+    &__search {
       margin-right: 10px;
     }
-    &__phone{
+    &__phone {
       margin-right: 10px;
     }
-    &__request-btn{
+    &__request-btn {
       margin-left: 10px;
     }
   }
-  @media (max-width: 1068px){
-    &__logo{
+  @media (max-width: 1068px) {
+    &__logo {
       flex: 1;
       margin-top: 12px;
       padding-left: 23px;
     }
-    &__top{
+    &__top {
       height: 77px;
       position: relative;
     }
-    &__request-btn{
+    &__request-btn {
       display: none;
     }
-    &__nav{
+    &__nav {
       display: none;
     }
-    &__phone{
+    &__phone {
       display: none;
     }
-    &__social{
+    &__social {
       display: none;
     }
-    .search{
+    .search {
       margin-right: 134px;
     }
+    .nav-mobile__btn-wrapper,
+    .nav-mobile {
+      display: block;
+    }
   }
-  @media (max-width: 918px){
-
+  @media (max-width: 760px) {
+    .search{
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 77px;
+      background: #1f2023;
+      padding-left: 43px;
+      padding-right: 33px;
+      width: 100%;
+      z-index: 10;
+      &__btn{
+        right: auto;
+        left: 25px;
+      }
+      &__input{
+        padding-right: 0;
+        padding-left: 63px;
+        width: 100%;
+      }
+      &__btn_mobile{
+        display: block;
+      }
+    }
   }
 }

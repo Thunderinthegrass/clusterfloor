@@ -2,6 +2,8 @@
   &__top {
     background: #1f2023;
     height: 72px;
+    position: relative;
+    z-index: 3;
   }
   .container {
     max-width: 1210px;
@@ -22,10 +24,6 @@
   &__search {
     position: relative;
     margin-right: 57px;
-    svg {
-      width: 32px;
-      height: 32px;
-    }
   }
   .search {
     z-index: 1;
@@ -44,9 +42,36 @@
     top: 20px;
     right: -3px;
     cursor: pointer;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .search__btn_off {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .search__btn_mobile {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    cursor: pointer;
+    z-index: 4;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
   }
   .search__results {
     display: none;
+    position: absolute;
     padding: 0 24px 24px 24px;
     background: #3e4d74;
     max-width: 351px;
@@ -146,46 +171,45 @@
     }
   }
   .nav-mobile {
+    display: none;
     position: absolute;
     right: 0;
     top: 77px;
     width: 430px;
-    padding-top: 111px;
     background: #1f2023;
     transform: translateY(-100%);
     transition: 0.5s;
-    transition-delay: .5s;
-    &__inner{
+    transition-delay: 0.5s;
+    z-index: 2;
+    &__inner {
       opacity: 0;
-      transition: .5s;
+      transition: 0.5s;
     }
     &.active {
       transform: translateY(0%);
       transition-delay: 0s;
-      .nav-mobile__inner{
-        transition-delay: .5s;
+      .nav-mobile__inner {
+        transition-delay: 0.5s;
         opacity: 1;
       }
     }
-  }
-  &__list {
-    padding-top: 111px;
-  }
-  ul {
-    margin-bottom: 136px;
-    padding-left: 138px;
-  }
-  li {
-    list-style: none;
-    margin-bottom: 38px;
-    &:last-child {
-      margin-bottom: 0;
+    &__list {
+      padding-top: 111px;
+      margin-bottom: 136px;
+      padding-left: 138px;
     }
-    a {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 27px;
-      color: #fbfbfb;
+    &__item {
+      list-style: none;
+      margin-bottom: 38px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .nav-mobile__link {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #fbfbfb;
+      }
     }
   }
   .phone__mobile {
@@ -216,9 +240,11 @@
     cursor: pointer;
     transition: 0.5s;
     &-wrapper {
+      display: none;
       position: absolute;
       top: 25px;
       right: 42px;
+      z-index: 4;
     }
     &:hover {
       cursor: pointer;
