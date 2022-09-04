@@ -314,42 +314,63 @@ h2 {
   cursor: pointer;
 }
 .header .nav-mobile {
-  width: 430px;
   position: absolute;
   right: 0;
   top: 77px;
+  width: 430px;
+  padding-top: 111px;
   background: #1f2023;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 .header .nav-mobile__inner {
-  -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-          transform: scaleY(0);
   opacity: 0;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.header .nav-mobile__list {
+.header .nav-mobile.active {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.header .nav-mobile.active .nav-mobile__inner {
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  opacity: 1;
+}
+.header__list {
   padding-top: 111px;
 }
-.header .nav-mobile ul {
+.header ul {
   margin-bottom: 136px;
   padding-left: 138px;
 }
-.header .nav-mobile li {
+.header li {
   list-style: none;
   margin-bottom: 38px;
 }
-.header .nav-mobile li:last-child {
+.header li:last-child {
   margin-bottom: 0;
 }
-.header .nav-mobile li a {
+.header li a {
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
   color: #fbfbfb;
 }
-.header .nav-mobile .phone__mobile {
+.header .phone__mobile {
   display: inline-block;
   font-size: 24px;
   line-height: 33px;
@@ -357,69 +378,71 @@ h2 {
   padding-left: 138px;
   color: #fbfbfb;
 }
-.header .nav-mobile .social__mobile {
+.header .social__mobile {
   margin-bottom: 138px;
   padding-left: 138px;
 }
-.header .nav-mobile .social__mobile a {
+.header .social__mobile a {
   display: inline-block;
   margin-right: 13px;
 }
-.header .nav-mobile .social__mobile a svg {
+.header .social__mobile a svg {
   width: 32px;
   height: 32px;
 }
-.header .nav-mobile input {
-  display: none;
-}
-.header .nav-mobile input + label {
-  position: absolute;
-  top: -51px;
-  right: 42px;
+.header .nav-mobile__btn {
+  position: relative;
   z-index: 5;
   width: 53px;
   height: 28px;
-}
-.header .nav-mobile input + label:hover {
   cursor: pointer;
-}
-.header .nav-mobile input + label span {
-  position: absolute;
-  width: 53px;
-  height: 1px;
-  background: #fbfbfb;
-  top: 50%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.header .nav-mobile input + label span:first-child {
+.header .nav-mobile__btn-wrapper {
+  position: absolute;
+  top: 25px;
+  right: 42px;
+}
+.header .nav-mobile__btn:hover {
+  cursor: pointer;
+}
+.header .nav-mobile__btn span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fbfbfb;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.header .nav-mobile__btn span:first-child {
   top: 0;
 }
-.header .nav-mobile input + label span:last-child {
+.header .nav-mobile__btn span:last-child {
   top: auto;
   bottom: 0;
 }
-.header .nav-mobile input:checked ~ .nav-mobile__inner {
-  opacity: 1;
-}
-.header .nav-mobile input:checked + label span {
+.header .nav-mobile__btn.mobile-btn--active span {
   opacity: 0;
   top: 50%;
 }
-.header .nav-mobile input:checked + label span:first-child {
+.header .nav-mobile__btn.mobile-btn--active span:first-child {
   opacity: 1;
   -webkit-transform: rotate(405deg);
       -ms-transform: rotate(405deg);
           transform: rotate(405deg);
 }
-.header .nav-mobile input:checked + label span:last-child {
+.header .nav-mobile__btn.mobile-btn--active span:last-child {
   opacity: 1;
   -webkit-transform: rotate(-405deg);
       -ms-transform: rotate(-405deg);
           transform: rotate(-405deg);
 }
-.header .nav-mobile .request-btn__mobile {
+.header .request-btn__mobile {
   width: 100%;
   height: 98px;
   background: #184cd1;
@@ -1743,6 +1766,7 @@ h2 {
   }
   .header__top {
     height: 77px;
+    position: relative;
   }
   .header__request-btn {
     display: none;

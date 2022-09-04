@@ -11,9 +11,11 @@
 
 function mobileMenu() {
   let menuBtn = document.querySelector('.nav-mobile__btn');
-  let mobileMenu = document.querySelector('.nav-mobile')
+  let mobileMenuInner = document.querySelector('.nav-mobile')
 
   menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
+    menuBtn.classList.toggle('mobile-btn--active');
+    mobileMenuInner.classList.toggle('active');
   })
 }
+mobileMenu();
