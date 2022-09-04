@@ -48,6 +48,7 @@
     }
   }
   .search__btn_off {
+    display: none;
     position: absolute;
     top: 20px;
     right: 40px;
@@ -55,6 +56,9 @@
     svg {
       width: 32px;
       height: 32px;
+    }
+    &.d-block{
+      display: block;
     }
   }
   .search__btn_mobile {
@@ -68,9 +72,12 @@
       width: 32px;
       height: 32px;
     }
+    &.d-none{
+      display: none;
+    }
   }
   .search__results {
-    display: none;
+    // display: none;
     position: absolute;
     padding: 0 24px 24px 24px;
     background: #3e4d74;
@@ -245,6 +252,9 @@
       top: 25px;
       right: 42px;
       z-index: 4;
+      &.d-none{
+        display: none;
+      }
     }
     &:hover {
       cursor: pointer;
