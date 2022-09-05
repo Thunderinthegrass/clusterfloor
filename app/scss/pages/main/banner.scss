@@ -47,9 +47,8 @@
     background-position: 24% 38%;
   }
   .banner2 {
-    background-image: url(../img/header-slider/slide2.png),
-      linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
-    background-position: 196% -15%;
+    background-image: url(../img/header-slider/slide2.png);
+    background-position: right -450px bottom -500px;
     .header__title {
       margin-bottom: 43px;
     }
@@ -179,30 +178,6 @@
         }
       }
     }
-    .ellips_1 {
-      position: absolute;
-      right: -84%;
-      bottom: -31%;
-      width: 1426px;
-      height: 609px;
-      transform: rotate(-198deg);
-      background-image: url(../img/svg/header/banner/ellipse4-1.svg);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: contain;
-    }
-    .ellips_2 {
-      position: absolute;
-      right: -48%;
-      bottom: -57%;
-      width: 1426px;
-      height: 609px;
-      transform: rotate(-156deg);
-      background-image: url(../img/svg/header/banner/ellipse4-1.svg);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: contain;
-    }
   }
   &__title {
     font-family: "RebelTypeDog";
@@ -269,4 +244,9 @@
   right: 65px;
   top: 393px;
   transform: rotate(180deg);
+}
+.swiper-slide:nth-child(2),
+.swiper-slide:nth-child(3),
+.swiper-slide:nth-child(4){
+  background: linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
 }
