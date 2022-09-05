@@ -72,7 +72,7 @@
               </svg>
             </a>
           </div>
-          <button class="request-btn__mobile">Оставить заявку</button>
+          <button class="request-btn__mobile modal-btn" data-path="form-popup">Оставить заявку</button>
         </div>
       </nav>
       <div class="header__top search-hide">
@@ -147,7 +147,24 @@
               </svg>
             </a>
           </div>
-          <a href="#" class="header__request-btn"> Оставить заявку </a>
+          <a href="#" class="header__request-btn modal-btn" data-path="form-popup"> Оставить заявку </a>
+        </div>
+      </div>
+      <div class="modal-overlay">
+        <div class="header-popup modal" data-target="form-popup">
+          <h4 class="header-popup__title">Оставьте заявку</h4>
+          <p class="header-popup__subtitle">Мы перезвоним вам в течение 15 минут
+          </p>
+          <form action="" class="header-popup__form">
+            <input type="text" class="header-popup__input" placeholder="Ваше имя">
+            <input type="tel" class="header-popup__input" placeholder="Номер телефона">
+            <input type="email" class="header-popup__input" placeholder="Email">
+            <button type="submit" class="header-popup__btn"><span>Отправить заявку</span></button>
+            <p class="agreement">
+              Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных данных</a> и получение сообщений 
+            </p>
+          </form>
+          <button class="modal__close-btn"></button>
         </div>
       </div>
       <nav class="header__nav nav">
@@ -181,7 +198,7 @@
           </ul>
         </div>
       </nav>
-      <!-- <div class="swiper">
+      <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="header__banner banner1">
@@ -311,7 +328,7 @@
         <div class="swiper-button-next">
           <img src="img/svg/header/banner/slider-arrow.svg" alt="вперед">
         </div>
-      </div> -->
+      </div>
     </header>
     <!-- <main class="main">
       <section class="types">

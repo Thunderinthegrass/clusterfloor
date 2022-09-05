@@ -1,12 +1,11 @@
-// console.log('привет')
+console.log("привет");
 
-// const swiper = new Swiper('.swiper', {
-
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
+const swiper = new Swiper(".swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
@@ -20,12 +19,11 @@ function mobileMenu() {
 mobileMenu();
 
 function headerSearch() {
-  let searchBtn = document.querySelector(".search__btn");
   let searchBtnOff = document.querySelector(".search__btn_off");
   let searchBtnMobile = document.querySelector(".search__btn_mobile");
   let search = document.querySelector(".search");
   let mobileMenuBtn = document.querySelector(".nav-mobile__btn-wrapper");
-  let searchInput = document.querySelector('.search__input');
+  let searchInput = document.querySelector(".search__input");
 
   searchBtnMobile.addEventListener("click", () => {
     function openSearch() {
@@ -52,10 +50,44 @@ function headerSearch() {
   closeSearch();
 
   function searchClear() {
-    searchBtnOff.addEventListener('click', () => {
-      searchInput.value = '';
-    })
+    searchBtnOff.addEventListener("click", () => {
+      searchInput.value = "";
+    });
   }
   searchClear();
 }
 headerSearch();
+
+function popupForm() {
+  const btns = document.querySelectorAll(".modal-btn");
+  const modalOverlay = document.querySelector(".modal-overlay ");
+  const modals = document.querySelectorAll(".modal");
+  const modalCloseBtn = document.querySelector('.modal__close-btn');
+
+  btns.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      let path = e.currentTarget.getAttribute("data-path");
+
+      modals.forEach((el) => {
+        el.classList.remove("modal--visible");
+      });
+
+      document
+        .querySelector(`[data-target="${path}"]`)
+        .classList.add("modal--visible");
+      modalOverlay.classList.add("modal-overlay--visible");
+    });
+  });
+
+  modalOverlay.addEventListener("click", (e) => {
+    console.log(e.target);
+
+    if (e.target == modalOverlay || e.target == modalCloseBtn) {
+      modalOverlay.classList.remove("modal-overlay--visible");
+      modals.forEach((el) => {
+        el.classList.remove("modal--visible");
+      });
+    }
+  });
+}
+popupForm();

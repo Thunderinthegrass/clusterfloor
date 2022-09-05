@@ -31,6 +31,8 @@
   .search__input {
     height: 34px;
     width: 345px;
+    font-size: 20px;
+    line-height: 27px;
     border-bottom: 1px solid #fbfbfb;
     margin-top: 24px;
     padding-right: 25px;
@@ -57,7 +59,7 @@
       width: 32px;
       height: 32px;
     }
-    &.d-block{
+    &.d-block {
       display: block;
     }
   }
@@ -72,13 +74,12 @@
       width: 32px;
       height: 32px;
     }
-    &.d-none{
+    &.d-none {
       display: none;
     }
   }
   .search__results {
-    // display: none;
-    position: absolute;
+    display: none;
     padding: 0 24px 24px 24px;
     background: #3e4d74;
     max-width: 351px;
@@ -252,7 +253,7 @@
       top: 25px;
       right: 42px;
       z-index: 4;
-      &.d-none{
+      &.d-none {
         display: none;
       }
     }
