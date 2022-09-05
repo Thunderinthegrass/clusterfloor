@@ -1,6 +1,6 @@
 console.log("привет");
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".header__swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

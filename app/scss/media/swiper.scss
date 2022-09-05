@@ -1,0 +1,104 @@
+.header {
+  &__swiper {
+    @media (max-width: 1475px) {
+      .swiper-button-prev {
+        left: auto;
+        top: auto;
+        right: 137px;
+        bottom: 25px;
+      }
+      .swiper-button-next {
+        top: auto;
+        right: 40px;
+        bottom: 25px;
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    &__btn-wrapper {
+      left: 35px;
+    }
+  }
+  @media (max-width: 1250px) {
+    .swiper-button-prev,
+    .swiper-button-next{
+      width: 53px;
+      height: 53px;
+    }
+    &__banner {
+      height: 705px;
+      &.banner1 {
+        .container {
+          padding-top: 266px;
+          padding-bottom: 0;
+          padding-left: 40px;
+          height: 705px;
+        }
+      }
+    }
+    &__title {
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 58px;
+      letter-spacing: 0.05em;
+    }
+    &__btn-wrapper {
+      bottom: 100px;
+    }
+  }
+  @media(max-width: 744px){
+    &__banner {
+      &.banner1 {
+        background-image: url(../img/header-slider/slide1-tablet.png), linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+        background-position: 40% 90%;
+      }
+    }
+  }
+  @media (max-width: 720px) {
+    .swiper-button-prev,
+    .swiper-button-next{
+      width: 35px;
+      height: 35px;
+      bottom: 50px;
+    }
+    .swiper-button-prev{
+      right: 75px;
+    }
+    .swiper-button-next{
+      right: 20px;
+    }
+    &__banner {
+      height: 495px;
+      &.banner1 {
+        background-position: 40% 50%;
+        .container {
+          padding-top: 125px;
+          padding-left: 18px;
+          height: 495px;
+        }
+      }
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+    }
+    &__btn-wrapper {
+      bottom: auto;
+      top: 270px;
+    }
+    &__submit-btn {
+      width: 220px;
+      height: 87px;
+      &::after {
+        font-size: 13.1183px;
+        line-height: 18px;
+      }
+    }
+  }
+  @media (max-width: 450px){
+    &__title{
+      width: 320px;
+    }
+  }
+}
