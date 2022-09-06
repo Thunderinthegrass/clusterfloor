@@ -1,10 +1,15 @@
 .recommend {
   padding-top: 168px;
   &__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex;flex-direction: column;
+    justify-content: center;
     padding-top: 70px;
+  }
+  &__row{
+    display: flex;
+    gap: 21px;
+    max-height: 358px;
+    height: 100%;
   }
   &__item {
     max-width: 279px;
@@ -12,6 +17,11 @@
     height: 337px;
     margin-bottom: 21px;
     position: relative;
+    img{
+      width: 100%;
+      max-height: 100%;
+      height: 100%;
+    }
     &-name {
       font-weight: 600;
       font-size: 20px;
