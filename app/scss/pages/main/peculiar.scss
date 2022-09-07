@@ -1,7 +1,8 @@
 .peculiar {
   position: relative;
-  height: 1030px;
+  height: 1230px;
   overflow: hidden;
+  padding-top: 213px;
   &__title {
     font-size: 183px;
     line-height: 183px;
@@ -16,6 +17,10 @@
     margin-top: -15px;
     position: relative;
   }
+  .board{
+    z-index: 5;
+    position: relative;
+  }
   .bubble {
     width: 234px;
     height: 234px;
@@ -23,6 +28,7 @@
     position: absolute;
     text-align: center;
     padding-top: 90px;
+    z-index: 6;
     &__title {
       font-weight: 600;
       font-size: 20px;
@@ -60,6 +66,7 @@
   .bubble2 {
     top: 30%;
     right: 9%;
+    z-index: 4;
     .bubble__title{
       &::before{
         top: -47px;
@@ -104,6 +111,7 @@
   .bubble6 {
     top: -8%;
     right: 47%;
+    z-index: 4;
     .bubble__title{
       &::before{
         top: -47px;
