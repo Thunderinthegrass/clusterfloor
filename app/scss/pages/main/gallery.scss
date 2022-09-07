@@ -6,6 +6,11 @@
     justify-content: space-between;
     position: relative;
   }
+  &__wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
   &__inner {
     &_first {
       max-width: 100%;
