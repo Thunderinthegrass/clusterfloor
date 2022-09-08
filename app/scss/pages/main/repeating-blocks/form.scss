@@ -131,4 +131,9 @@
     width: 100%;
     transform: translateZ(1px);
   }
+  &__img_tablet {
+    width: 100%;
+    transform: translateZ(1px);
+    display: none;
+  }
 }
