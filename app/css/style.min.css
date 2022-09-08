@@ -1557,6 +1557,38 @@ h2 {
   letter-spacing: 0.05em;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #ffffff;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: ticker 20s linear infinite;
+          animation: ticker 20s linear infinite;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.peculiar__title span {
+  padding: 0 80px;
+}
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
 }
 .peculiar__inner {
   max-width: 1292px;
@@ -3359,6 +3391,9 @@ h2 {
     font-size: 60px;
     line-height: 72px;
     letter-spacing: 0.05em;
+  }
+  .peculiar__title span {
+    padding: 0 20px;
   }
   .peculiar .bubble {
     width: 178px;

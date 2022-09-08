@@ -9,6 +9,21 @@
     letter-spacing: 0.05em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #ffffff;
+    width: auto;
+    display: flex;
+    animation: ticker 20s linear infinite;
+    transform: translateX(0);
+    span{
+      padding: 0 80px;
+    }
+  }
+  @keyframes ticker {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-300%);
+    }
   }
   &__inner {
     max-width: 1292px;
