@@ -5,7 +5,13 @@ const swiper = new Swiper(".header__swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  effect: "fade",
+  loop: "infinite",
 });
+
+swiper.on('slideChange', function(sld) {
+  document.body.setAttribute('data-sld', sld.realIndex);
+})
 
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
