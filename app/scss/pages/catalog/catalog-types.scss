@@ -1,11 +1,11 @@
 .catalog__types {
-  padding-top: 125px;
+  padding-top: 130px;
   &-title {
     font-weight: 400;
     font-size: 47px;
     line-height: 131.5%;
     letter-spacing: 0.05em;
-    margin-bottom: 72px;
+    margin-bottom: 65px;
   }
   &-inner {
     display: flex;
@@ -21,6 +21,9 @@
     line-height: 41px;
     color: #f5f7fa;
     &:hover {
+      background: #293b67;
+    }
+    &._current{
       background: #293b67;
     }
   }

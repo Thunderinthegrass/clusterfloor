@@ -139,3 +139,27 @@ function scrollAnimation() {
   }
 }
 scrollAnimation();
+
+
+function tabs() {
+
+  let tabItem = document.querySelectorAll('.tabs__item');
+  let tabNavItem = document.querySelectorAll('.tabs-navigation__item');
+
+  function tab(tabItem, tabNavItem) {
+    tabNavItem.forEach((elem, index) => {
+      elem.addEventListener('click', (e) => {
+        for (let i = 0; i < tabNavItem.length; i++) {
+          tabNavItem[i].classList.remove('tabs-navigation__item--active');
+          e.target.classList.add('tabs-navigation__item--active');
+          tabItem[i].classList.remove('tab--active');
+        }
+        tabItem[index].classList.add('tab--active');
+        console.log('ggg')
+      })
+    })
+  }
+  
+  tab(tabItem, tabNavItem);
+}
+tabs();
