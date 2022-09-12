@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=h1, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Страница товара</title>
+</head>
+<body>
+  <header class="header">
+    <div class="nav-mobile__btn-wrapper">
+      <button class="nav-mobile__btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <button class="search__btn_mobile search-hide">
+      <svg class="search-hide">
+        <use
+          xlink:href="img/sprite/sprite.svg#header--top--search"
+        ></use>
+      </svg>
+    </button>
+    <nav class="nav-mobile">
+      <div class="nav-mobile__inner">
+        <ul class="nav-mobile__list">
+          <li class="nav-mobile__item">
+            <a class="nav-mobile__link" href="catalog-main.html">Каталог</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a class="nav-mobile__link" href="#">Где купить</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a class="nav-mobile__link" href="#">Акции</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a class="nav-mobile__link" href="#">Покупателю</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a class="nav-mobile__link" href="#">Сотрудничество</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a class="nav-mobile__link" href="#">Информация</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a class="nav-mobile__link" href="#">О бренде</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a class="nav-mobile__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a href="tel:+78008008080" class="phone__mobile">+7 (800) 800–80–80</a>
+        <div class="social__mobile">
+          <a href="#" class="header__whatsapp">
+            <svg>
+              <use
+                xlink:href="img/sprite/sprite.svg#header--top--whatsapp"
+              ></use>
+            </svg>
+          </a>
+          <a href="#" class="header__tg">
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#header--top--tg"></use>
+            </svg>
+          </a>
+        </div>
+        <button class="request-btn__mobile modal-btn" data-path="form-popup">Оставить заявку</button>
+      </div>
+    </nav>
+    <div class="header__top search-hide">
+      <div class="container search-hide">
+        <a href="index.html" class="header__logo search-hide">
+          <svg>
+            <use xlink:href="img/sprite/sprite.svg#header--top--logo"></use>
+          </svg>
+        </a>
+        <div class="header__search search search-hide">
+          <input type="text" class="search__input search-hide" />
+          <button type="submit" class="search__btn search-hide">
+            <svg class="search-hide">
+              <use
+                xlink:href="img/sprite/sprite.svg#header--top--search"
+              ></use>
+            </svg>
+          </button>
+          <button class="search__btn_off search-hide">
+            <svg class="search-hide">
+              <use class="search-hide"
+                xlink:href="img/sprite/sprite.svg#header--top--search-off"
+              ></use>
+            </svg>
+          </button>
+          <div class="search__results">
+            <div class="search__results-inner">
+              <a href="#" class="search__result">
+                <div class="search__result-img">
+                  <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                </div>
+                <div class="search__result-name">
+                  <p>Cluster Floor Stone ZH-81042-4</p>
+                </div>
+              </a>
+              <a href="#" class="search__result">
+                <div class="search__result-img">
+                  <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                </div>
+                <div class="search__result-name">
+                  <p>Cluster Floor Stone ZH-81042-4</p>
+                </div>
+              </a>
+              <a href="#" class="search__result">
+                <div class="search__result-img">
+                  <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                </div>
+                <div class="search__result-name">
+                  <p>Cluster Floor Stone ZH-81042-4</p>
+                </div>
+              </a>
+            </div>
+            <div class="search__results-all">
+              <a href="#" class="all-results-link">Посмотреть все результаты</a>
+            </div>
+          </div>
+        </div>
+        <a href="tel:+78008008080" class="header__phone"
+          >+7 (800) 800–80–80</a
+        >
+        <div class="header__social">
+          <a href="#" class="header__whatsapp">
+            <svg>
+              <use
+                xlink:href="img/sprite/sprite.svg#header--top--whatsapp"
+              ></use>
+            </svg>
+          </a>
+          <a href="#" class="header__tg">
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#header--top--tg"></use>
+            </svg>
+          </a>
+        </div>
+        <a href="#" class="header__request-btn modal-btn" data-path="form-popup"> Оставить заявку </a>
+      </div>
+    </div>
+    <div class="modal-overlay">
+      <div class="header-popup modal" data-target="form-popup">
+        <h4 class="header-popup__title">Оставьте заявку</h4>
+        <p class="header-popup__subtitle">Мы перезвоним вам в течение 15 минут
+        </p>
+        <form action="" class="header-popup__form">
+          <input type="text" class="header-popup__input" placeholder="Ваше имя">
+          <input type="tel" class="header-popup__input" placeholder="Номер телефона">
+          <input type="email" class="header-popup__input" placeholder="Email">
+          <button type="submit" class="header-popup__btn"><span>Отправить заявку</span></button>
+          <p class="agreement">
+            Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных данных</a> и получение сообщений 
+          </p>
+        </form>
+        <button class="modal__close-btn"></button>
+      </div>
+      <!-- <div class="form-sent" data-target="form-popup">
+        <p class="form-sent__title">Спасибо, заявка отправлена!</p>
+        <img src="img/svg/form-sent.svg" alt="картинка">
+        <a href="#" class="form-sent__link">Вернуться на главную</a>
+      </div> -->
+    </div>
+    <nav class="header__nav nav">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="catalog-main.html">Каталог</a>
+            <button class="nav-btn"></button>
+          </li>
+          <li class="nav__item">
+            <a href="#">Где купить</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Покупателю</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Сотрудничество</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Информация</a>
+          </li>
+          <li class="nav__item">
+            <a href="#"> О бренде</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="breadcrumbs"> 
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="index.html">главная /</a></li>
+        <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="catalog-main.html">каталог /</a></li>
+        <li class="breadcrumbs__item"> <span class="breadcrumbs__current">карточка товара</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__features">
+    <div class="container _anim-items">
+      <h2 class="product__features-title">характеристики</h2>
+      <div class="product__features-options product__options">
+        <div class="product__options-top">
+          <div class="product__options-board">
+            <img src="img/svg/product/board.svg" alt="">
+            <span class="board-size board-length">Длина 610 мм</span>
+            <span class="board-size board-thickness">Толщина 4 мм</span>
+            <span class="board-size board-width">Ширина 305 мм</span>
+          </div>
+          <div class="product__options-bubbles">
+            <div class="bubble1">
+              <div class="bubble1__title">
+                Влагостойкость
+             </div>
+             <p class="bubble1__text">
+                Не впитывает и не пропускает влагу
+             </p> 
+            </div>
+            <div class="bubble2">
+              <div class="bubble2__title">
+                Встроенная подложка
+             </div>
+             <p class="bubble2__text">
+              Толстый защитный слой из PVH
+             </p> 
+            </div>
+          </div>
+        </div>
+        <div class="product__options-lists-wrapper">
+          <div class="product__options-lists">
+            <ul class="product__options__list options__list">
+              <li class="options__list-item">Срок службы</li>
+              <li class="options__list-item">Толщина защитного слоя</li>
+              <li class="options__list-item">Состав защитного слоя</li>
+              <li class="options__list-item">Назначение</li>
+              <li class="options__list-item">Способ укладки</li>
+              <li class="options__list-item">Срок эксплуатации</li>
+            </ul>
+            <ul class="product__options__list options__list">
+              <li class="options__list-item">12 лет</li>
+              <li class="options__list-item">0,5 мм</li>
+              <li class="options__list-item">333 мм</li>
+              <li class="options__list-item">333 мм</li>
+              <li class="options__list-item">333 мм</li>
+              <li class="options__list-item">10 лет</li>
+            </ul>
+          </div>
+          <div class="product__options-lists">
+            <ul class="product__options__list options__list">
+              <li class="options__list-item">Срок службы</li>
+              <li class="options__list-item">Толщина защитного слоя</li>
+              <li class="options__list-item">Состав защитного слоя</li>
+              <li class="options__list-item">Назначение</li>
+              <li class="options__list-item">Способ укладки</li>
+              <li class="options__list-item">Срок эксплуатации</li>
+            </ul>
+            <ul class="product__options__list options__list">
+              <li class="options__list-item">12 лет</li>
+              <li class="options__list-item">0,5 мм</li>
+              <li class="options__list-item">333 мм</li>
+              <li class="options__list-item">333 мм</li>
+              <li class="options__list-item">333 мм</li>
+              <li class="options__list-item">10 лет</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="product__features-parameters">
+
+      </div>
+      <div class="product__features-descr">
+        Коллекция VersaШes-Эверест в мире кварц-виниловой плитки! Единственная квадратная замковая плитка, которую можно уложить как со смещением, так и без него! Первый виниловый модульный паркет, не требующий за собой абсолютно никакого специализированного ухода (в отличие от натурального модульного паркета). Экономия на материале, который вобрал в себя всё лучшее, что есть сейчас в мире Коллекция VersaШes-Эверест в мире кварц-виниловой плитки! Единственная квадратная замковая плитка, которую можно уложить как со смещением, так и без него! Первый виниловый модульный паркет, не требующий за собой абсолютно никакого специализированного ухода (в отличии от натурального модульного паркета). Экономия на материале, который вобрал в себя всё лучшее, что есть сейчас в мире Коллекция VersaШes-Эверест в мире кварц-виниловой плитки! Единственная квадратная замковая плитка, которую можно уложить как со смещением, так и без него! Первый виниловый модульный паркет...
+      </div>
+      <div class="product__features-docs product__docs">
+        <div class="product__docs-wrapper">
+          <div class="product__docs-item"></div>
+          <div class="product__docs-item"></div>
+          <div class="product__docs-item"></div>
+        </div>
+        <div class="product__docs-wrapper">
+          <div class="product__docs-item"></div>
+          <div class="product__docs-item"></div>
+          <div class="product__docs-item"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

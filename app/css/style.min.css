@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.catalog__banner .parameters .parameter::before, .header-popup__btn span::after, .form__img-wrapper::before, .form__btn span::after, .service__link::after, .service__text::before, .peculiar .bubble__title::before, .samples-dot__link::before, .samples__link a::after, .gallery__link::after, .unique__list-item::before, .unique__item_third .unique__info-title::before, .unique__item_second .unique__info-title::before, .unique__item_second .img-wrapper::after, .unique__item_second .img-wrapper::before, .unique__item_first .unique__info-title::before, .recommend__item-link::after, .header__banner .parameters .parameter::before {
+.product__features .product__options-bubbles .bubble2__title::before, .product__features .product__options-bubbles .bubble1__title::before, .catalog__banner .parameters .parameter::before, .header-popup__btn span::after, .form__img-wrapper::before, .form__btn span::after, .service__link::after, .service__text::before, .peculiar .bubble__title::before, .samples-dot__link::before, .samples__link a::after, .gallery__link::after, .unique__list-item::before, .unique__item_third .unique__info-title::before, .unique__item_second .unique__info-title::before, .unique__item_second .img-wrapper::after, .unique__item_second .img-wrapper::before, .unique__item_first .unique__info-title::before, .recommend__item-link::after, .header__banner .parameters .parameter::before {
   position: absolute;
   content: "";
 }
@@ -4403,6 +4403,12 @@ h2 {
   }
 }
 
+.catalog__banner_main .banner__bg-img_mobile {
+  display: none;
+}
+.catalog__banner_main .banner__bg-img_tablet {
+  display: none;
+}
 @media (max-width: 1700px) {
   .catalog__banner.catalog__banner_main .banner__bg-img, .catalog__banner.catalog__banner_1 .banner__bg-img, .catalog__banner.catalog__banner_2 .banner__bg-img {
     margin-top: -177px;
@@ -4640,9 +4646,15 @@ h2 {
 .catalog__banner.catalog__banner_2 .banner__bg-img_mobile {
   display: none;
 }
+.catalog__banner.catalog__banner_2 .banner__bg-img_tablet {
+  display: none;
+}
 @media (max-width: 744px) {
   .catalog__banner.catalog__banner_2 .banner__bg-img {
     display: none;
+  }
+  .catalog__banner.catalog__banner_2 .banner__bg-img_tablet {
+    display: block;
   }
 }
 @media (max-width: 360px) {
@@ -5179,6 +5191,129 @@ h2 {
   height: 37px;
   background-image: url(../img/svg/header/banner/param3-2.svg) !important;
 }
+
+.product__features {
+  padding-top: 154px;
+}
+.product__features-title {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 131.5%;
+  letter-spacing: 0.03em;
+  margin-bottom: 59px;
+}
+.product__features .product__options-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 382px;
+}
+.product__features .product__options-board {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.product__features .product__options-board img {
+  position: absolute;
+  left: -66px;
+}
+.product__features .product__options-board .board-size {
+  position: absolute;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+}
+.product__features .product__options-board .board-size.board-length {
+  top: 60px;
+  left: 40%;
+}
+.product__features .product__options-board .board-size.board-thickness {
+  bottom: 147px;
+  right: 21px;
+}
+.product__features .product__options-board .board-size.board-width {
+  bottom: 85px;
+  right: 43px;
+}
+.product__features .product__options-bubbles {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.product__features .product__options-bubbles .bubble1 {
+  width: 258px;
+  height: 258px;
+  background-image: url(../../img/svg/product/bubble.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  position: absolute;
+  left: 12px;
+  top: -76px;
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 35px;
+  z-index: 6;
+}
+.product__features .product__options-bubbles .bubble1__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+.product__features .product__options-bubbles .bubble1__title::before {
+  width: 47px;
+  height: 47px;
+  top: -47px;
+  left: -8px;
+  background-image: url(../../img/svg/peculiar/bubble1.svg);
+}
+.product__features .product__options-bubbles .bubble1__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+}
+.product__features .product__options-bubbles .bubble2 {
+  width: 258px;
+  height: 258px;
+  background-image: url(../../img/svg/product/bubble.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  position: absolute;
+  right: 0;
+  top: 18px;
+  text-align: left;
+  padding-top: 110px;
+  padding-left: 35px;
+  z-index: 6;
+}
+.product__features .product__options-bubbles .bubble2__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+.product__features .product__options-bubbles .bubble2__title::before {
+  width: 52px;
+  height: 52px;
+  top: -50px;
+  left: -6px;
+  background-image: url(../../img/svg/header/banner/param4.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.product__features .product__options-bubbles .bubble2__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+}
 @supports (-webkit-appearance:none){
 .header .nav-btn{background-image:url(../../img/svg/header/nav/Icon.svg)}
 .header .banner1{background-image:url(../img/header-slider/slide1.webp), -o-linear-gradient(235.55deg, #2a3a62 1.39%, #18223b 79.65%)}
@@ -5245,6 +5380,10 @@ h2 {
 .catalog__banner_1 .parameter_2::before{background-image:url(../img/svg/header/banner/param3-2.svg) !important}
 .catalog__banner_1 .parameter_5::before{background-image:url(../img/svg/header/banner/param3-5.svg) !important}
 .banner_2 .parameter_2::before{background-image:url(../img/svg/header/banner/param3-2.svg) !important}
+.product__features .product__options-bubbles .bubble1{background-image:url(../../img/svg/product/bubble.svg)}
+.product__features .product__options-bubbles .bubble1__title::before{background-image:url(../../img/svg/peculiar/bubble1.svg)}
+.product__features .product__options-bubbles .bubble2{background-image:url(../../img/svg/product/bubble.svg)}
+.product__features .product__options-bubbles .bubble2__title::before{background-image:url(../../img/svg/header/banner/param4.svg)}
 }
 
  @media (max-width: 744px){

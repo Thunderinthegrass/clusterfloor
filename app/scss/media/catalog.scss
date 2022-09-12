@@ -271,6 +271,14 @@
   }
 }
 .catalog__banner {
+  &_main {
+    .banner__bg-img_mobile {
+      display: none;
+    }
+    .banner__bg-img_tablet {
+      display: none;
+    }
+  }
   @media (max-width: 1700px) {
     &.catalog__banner_main,
     &.catalog__banner_1,
@@ -398,7 +406,7 @@
               height: 30px;
               background-size: contain;
             }
-            &:nth-child(1){
+            &:nth-child(1) {
               margin-top: 0;
             }
             &:nth-child(2) {
@@ -415,9 +423,9 @@
         }
       }
       @media (max-width: 375px) {
-        .parameters{
-          .parameter{
-            &:nth-child(1){
+        .parameters {
+          .parameter {
+            &:nth-child(1) {
               margin-right: 85px;
             }
             &:nth-child(3) {
@@ -426,19 +434,19 @@
           }
         }
       }
-      @media (max-width: 360px){
-        .banner__bg-img_tablet{
+      @media (max-width: 360px) {
+        .banner__bg-img_tablet {
           display: none;
         }
-        .banner__bg-img_mobile{
+        .banner__bg-img_mobile {
           display: block;
           margin-top: -150px;
         }
       }
-      @media (max-width: 360px){
-        .parameters{
-          .parameter{
-            &:nth-child(1){
+      @media (max-width: 360px) {
+        .parameters {
+          .parameter {
+            &:nth-child(1) {
               margin-right: 53px;
             }
             &:nth-child(3) {
@@ -449,31 +457,31 @@
       }
     }
   }
-  &.catalog__banner_1{
-    @media(max-width: 654px){
-      .parameters{
-        .parameter{
-          &:nth-child(4){
+  &.catalog__banner_1 {
+    @media (max-width: 654px) {
+      .parameters {
+        .parameter {
+          &:nth-child(4) {
             margin-right: 10px;
           }
         }
       }
     }
-    @media(max-width: 547px){
-      .parameters{
+    @media (max-width: 547px) {
+      .parameters {
         padding-left: 20px;
         padding-right: 20px;
-        .parameter{
-          &:nth-child(4){
+        .parameter {
+          &:nth-child(4) {
             margin-right: 0;
           }
-          &:nth-child(3){
+          &:nth-child(3) {
             margin-right: 56px;
           }
         }
       }
     }
-    @media(max-width: 520px){
+    @media (max-width: 520px) {
       .parameters {
         padding-left: 20px;
         padding-right: 20px;
@@ -494,65 +502,71 @@
             height: 30px;
             background-size: contain;
           }
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-right: 60px;
           }
         }
       }
     }
-    @media(max-width: 395px){
+    @media (max-width: 395px) {
       .parameters {
         .parameter {
-          &:nth-child(1){
+          &:nth-child(1) {
             margin-right: 101px;
           }
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-right: 0;
           }
-          &:nth-child(3){
+          &:nth-child(3) {
             margin-right: 56px;
           }
         }
       }
     }
-    @media(max-width: 357px){
+    @media (max-width: 357px) {
       .parameters {
         .parameter {
-          &:nth-child(1){
+          &:nth-child(1) {
             margin-right: 61px;
           }
-          &:nth-child(3){
+          &:nth-child(3) {
             margin-right: 16px;
           }
         }
       }
     }
   }
-  &.catalog__banner_2{
-    .banner__bg-img_mobile{
+  &.catalog__banner_2 {
+    .banner__bg-img_mobile {
       display: none;
     }
-    @media (max-width: 744px){
-      .banner__bg-img{
+    .banner__bg-img_tablet {
+      display: none;
+    }
+    @media (max-width: 744px) {
+      .banner__bg-img {
         display: none;
+      }
+      .banner__bg-img_tablet {
+        display: block;
       }
     }
-    @media (max-width: 360px){
-      .banner__bg-img_tablet{
+    @media (max-width: 360px) {
+      .banner__bg-img_tablet {
         display: none;
       }
-      .banner__bg-img_mobile{
+      .banner__bg-img_mobile {
         display: block;
         margin-top: -100px;
       }
     }
   }
 }
-.catalog__recommend .recommend__items{
+.catalog__recommend .recommend__items {
   @media (max-width: 1200px) {
     padding-top: 60px;
   }
-  @media (max-width: 744px){
+  @media (max-width: 744px) {
     padding-top: 30px;
   }
 }
