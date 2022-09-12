@@ -85,11 +85,17 @@
     }
   }
 }
-.banner_1{
+.catalog__banner_1{
   margin-top: 95px;
   .banner__bg-img{
     margin-top: -215px;
     transform: translateX(8px);
+  }
+  .banner__bg-img_tablet{
+    display: none;
+  }
+  .banner__bg-img_mobile{
+    display: none;
   }
   .parameters{
     max-width: 1200px;
