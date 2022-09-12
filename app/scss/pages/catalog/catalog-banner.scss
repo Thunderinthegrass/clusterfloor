@@ -119,4 +119,11 @@
     margin-top: -215px;
     transform: translateX(8px);
   }
+  .parameter_2 {
+    &::before {
+      width: 37px;
+      height: 37px;
+      background-image: url(../img/svg/header/banner/param3-2.svg)!important;
+    }
+  }
 }

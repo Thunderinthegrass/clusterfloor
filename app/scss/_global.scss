@@ -93,3 +93,17 @@ h2{
     }
   }
 }
+@media(max-width: 744px){
+  .breadcrumbs{
+    .breadcrumbs__list{
+      padding-top: 45px;
+    }
+  }
+}
+@media(max-width: 360px){
+  .breadcrumbs{
+    .breadcrumbs__list{
+      padding-top: 23px;
+    }
+  }
+}
