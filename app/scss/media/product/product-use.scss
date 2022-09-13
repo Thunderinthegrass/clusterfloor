@@ -1,0 +1,53 @@
+.product-use {
+  &.media {
+    @media (max-width: 1350px) {
+      .container {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+    @media (max-width: 910px) {
+      padding-top: 95px;
+      .product-use__title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 131.5%;
+        letter-spacing: 0.05em;
+        margin-bottom: 24px;
+      }
+    }
+    @media (max-width: 744px) {
+      .product-use_badroom {
+        max-width: 288px;
+        height: 269px;
+      }
+      .product-use_kitchen {
+        max-width: 364px;
+        height: 269px;
+      }
+      .product-use_bathroom {
+        max-width: 443px;
+        height: 269px;
+      }
+      .product-use_hallway {
+        max-width: 208px;
+        height: 269px;
+      }
+      .product-use_childrens {
+        max-width: 288px;
+        height: 269px;
+      }
+      .product-use_living-room {
+        max-width: 366px;
+        height: 269px;
+      }
+      .product-use__name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        left: 10px;
+        bottom: 10px;
+      }
+    }
+  }
+}
