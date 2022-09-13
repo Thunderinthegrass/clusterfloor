@@ -5121,7 +5121,79 @@ h2 {
     bottom: 10px;
   }
 }
+@media (max-width: 700px) {
+  .product-use.media .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .product-use.media {
+    padding-top: 65px;
+  }
+  .product-use.media .product-use__inner {
+    height: 1388px;
+  }
+  .product-use.media .product-use__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 131.5%;
+    margin-bottom: 21px;
+  }
+  .product-use.media .product-use__name {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 19px !important;
+  }
+  .product-use.media .product-use__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-use.media .product-use__row:last-child {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-transform: translateY(calc(-50% - 5px));
+        -ms-transform: translateY(calc(-50% - 5px));
+            transform: translateY(calc(-50% - 5px));
+  }
+  .product-use.media .product-use_badroom {
+    max-width: 100%;
+    height: 269px;
+  }
+  .product-use.media .product-use_kitchen {
+    max-width: 100%;
+    height: 269px;
+  }
+  .product-use.media .product-use_bathroom {
+    max-width: 100%;
+    height: 269px;
+  }
+  .product-use.media .product-use_hallway {
+    max-width: calc(50% - 5px);
+    height: 269px;
+    z-index: 1;
+  }
+  .product-use.media .product-use_childrens {
+    max-width: calc(50% - 5px);
+    height: 269px;
+  }
+  .product-use.media .product-use_living-room {
+    max-width: 100%;
+    height: 269px;
+  }
+  .product-use.media .product-use__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    left: 10px;
+    bottom: 10px;
+  }
+}
 
+@im;
 .header-popup {
   position: relative;
   width: 784px;
@@ -5951,7 +6023,7 @@ h2 {
   max-width: 513px;
   width: 100%;
 }
-.product-use_kitshen {
+.product-use_kitсhen {
   max-width: 649px;
   width: 100%;
 }
@@ -5970,6 +6042,93 @@ h2 {
 .product-use_living-room {
   max-width: 652px;
   width: 100%;
+}
+
+.compound__title {
+  padding-top: 124px;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  margin-bottom: 88px;
+}
+.compound__img {
+  margin-left: -10px;
+  -webkit-transform: translateX(-15px);
+      -ms-transform: translateX(-15px);
+          transform: translateX(-15px);
+  position: relative;
+}
+.compound__layer-dot {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 100%;
+}
+.compound .dot-inner {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  background: #fbfbfb;
+  -webkit-transform: translate(7px, 7px);
+      -ms-transform: translate(7px, 7px);
+          transform: translate(7px, 7px);
+}
+.compound .dot-1 {
+  position: absolute;
+  left: 56%;
+  top: 106px;
+}
+.compound .dot-2 {
+  position: absolute;
+  left: 71%;
+  top: 155px;
+}
+.compound .dot-3 {
+  position: absolute;
+  left: 72.5%;
+  top: 239px;
+}
+.compound .dot-4 {
+  position: absolute;
+  left: 72.5%;
+  top: 320px;
+}
+.compound__layer-descr {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.compound .descr-1 {
+  position: absolute;
+  left: 59.5%;
+  top: 69px;
+}
+.compound .descr-2 {
+  position: absolute;
+  left: 81.5%;
+  top: 123px;
+}
+.compound .descr-3 {
+  position: absolute;
+  left: 81.5%;
+  top: 218px;
+}
+.compound .descr-4 {
+  position: absolute;
+  left: 81.5%;
+  top: 324px;
+}
+.compound .descr-4 .descr-title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.compound .descr-4 span {
+  display: block;
+  white-space: nowrap;
+  font-weight: 400;
 }
 @supports (-webkit-appearance:none){
 .header .nav-btn{background-image:url(../../img/svg/header/nav/Icon.svg)}
