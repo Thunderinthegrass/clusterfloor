@@ -16,6 +16,12 @@ h2 {
   line-height: 56px;
   letter-spacing: 0.05em;
 }
+.stone{
+  background: linear-gradient(180deg, #424959 3.49%, #18223C 54.48%, #1F2023 97.17%)!important;
+}
+.wood{
+  background: linear-gradient(180deg, #71B9A0 -17.05%, #192545 59.13%, #1F2023 100%);
+}
 .wrapper {
   display: flex;
   flex-direction: column;
