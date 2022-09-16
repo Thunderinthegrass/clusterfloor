@@ -57,11 +57,11 @@
   font-weight: 400;
   font-size: 76.0031px;
   line-height: 131.5%;
-  /* identical to box height, or 100px */
+  
   
   letter-spacing: 0.05em;
   
-  /* White */
+ 
   
   color: #FBFBFB;
     padding-top: 5.5%;
@@ -72,32 +72,42 @@
   font-weight: 400;
   font-size: 47px;
   line-height: 131.5%;
-  /* identical to box height, or 62px */
+  
   
   letter-spacing: 0.05em;
   
-  /* White */
+
   
   color: #FBFBFB;
     padding-top:10%;
   }
   
+  .address_row-column{
+    width:100%
+  }
+ 
   .address_row{
     display:flex;
+  padding-bottom:4%;
     font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+color: #FBFBFB;
+  }
+.address_row a{
+    color: #f7f5f2;
+    display: inline-block;
+  }
+.address__text{
+  font-family: 'Nunito Sans';
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
 line-height: 47px;
 
-/* White */
-
-color: #FBFBFB;
-  }
-  .address_row-column{
-    width:100%
-  }
-  .address_row a{
-    color: #f7f5f2;
-    display: inline-block;
-  }
+}
+.address__phone{
+  margin-top:9%;
+}
