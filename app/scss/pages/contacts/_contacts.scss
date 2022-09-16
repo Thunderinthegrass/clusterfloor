@@ -1,0 +1,103 @@
+.contacts__title_txt,.visit__title_txt{
+    font-family: "RebelTypeDog";
+    font-size: 76px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: 46px;
+}
+.gallery__row{
+    display: flex;
+    flex-wrap:no wrap;
+    padding: 0 4px;
+  }
+  .gallery img{
+      display:block;
+    max-width:100%;
+    padding-top:20px;
+    padding-left:20px;
+  }
+  .gallery{
+     display:inline-block;
+  }
+  .visit__showroom-row{
+    display:flex;
+    flex-wrap:nowrap;
+    gap:4%;
+   
+  }
+  
+  .visit__showroom-row p{
+    font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  }
+  #visit__showroom-txt1{
+    width:80%;
+    
+  }
+  #visit__showroom-txt4{
+    width:80%;
+  }
+  #visit__showroom-txt2{
+     width:85%;
+  }
+  #visit__showroom-txt3{
+     width:80%;
+  }
+  .visit__showroom-row img{
+    display:inline-block
+  }  
+  .contacts__title_txt{
+    font-family: 'RebelTypeDog';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  /* identical to box height, or 100px */
+  
+  letter-spacing: 0.05em;
+  
+  /* White */
+  
+  color: #FBFBFB;
+    padding-top: 5.5%;
+  }
+  .visit__title_txt{
+    font-family: 'RebelTypeDog';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 131.5%;
+  /* identical to box height, or 62px */
+  
+  letter-spacing: 0.05em;
+  
+  /* White */
+  
+  color: #FBFBFB;
+    padding-top:10%;
+  }
+  
+  .address_row{
+    display:flex;
+    font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 47px;
+
+/* White */
+
+color: #FBFBFB;
+  }
+  .address_row-column{
+    width:100%
+  }
+  .address_row a{
+    color: #f7f5f2;
+    display: inline-block;
+  }
