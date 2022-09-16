@@ -2440,6 +2440,8 @@ h2 {
 
 .product-use {
   padding-top: 146px;
+  padding-bottom: 73px;
+  position: relative;
 }
 .product-use__title {
   font-weight: 400;
@@ -2506,6 +2508,27 @@ h2 {
 .product-use_living-room {
   max-width: 652px;
   width: 100%;
+}
+.product-use .view-more-btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  width: 161px;
+  padding-bottom: 4px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 2px solid;
+  -o-border-image: -o-linear-gradient(left, #22bafb, #64eeb4, #fff5dd, #c8f3f9, #184cd1);
+     border-image: -webkit-gradient(linear, left top, right top, from(#22bafb), color-stop(#64eeb4), color-stop(#fff5dd), color-stop(#c8f3f9), to(#184cd1));
+     border-image: linear-gradient(to right, #22bafb, #64eeb4, #fff5dd, #c8f3f9, #184cd1);
+  border-image-slice: 1;
+  cursor: pointer;
 }
 
 .stone .container {
