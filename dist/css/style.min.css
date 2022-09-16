@@ -113,6 +113,18 @@ h2 {
   letter-spacing: 0.05em;
 }
 
+.stone {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3.49%, #424959), color-stop(54.48%, #18223C), color-stop(97.17%, #1F2023)) !important;
+  background: -o-linear-gradient(top, #424959 3.49%, #18223C 54.48%, #1F2023 97.17%) !important;
+  background: linear-gradient(180deg, #424959 3.49%, #18223C 54.48%, #1F2023 97.17%) !important;
+}
+
+.wood {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-17.05%, #71B9A0), color-stop(59.13%, #192545), to(#1F2023));
+  background: -o-linear-gradient(top, #71B9A0 -17.05%, #192545 59.13%, #1F2023 100%);
+  background: linear-gradient(180deg, #71B9A0 -17.05%, #192545 59.13%, #1F2023 100%);
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6503,7 +6515,7 @@ h2 {
   content: "";
   width: 27px;
   height: 27px;
-  background-image: url(../../../img/svg/product/popular.svg);
+  background-image: url(../img/svg/product/popular.svg);
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -6797,7 +6809,7 @@ h2 {
 .product__options-bubbles .bubble2__title::before{background-image:url(../../img/svg/header/banner/param4.svg)}
 .options__list-left .options__list-item::before{background-image:url(../img/svg/product/line-icon.svg)}
 .card .card-descr .availability::before{background-image:url(../img/svg/product/availability.svg)}
-.card .card-descr .popular::before{background-image:url(../../../img/svg/product/popular.svg)}
+.card .card-descr .popular::before{background-image:url(../img/svg/product/popular.svg)}
 .card__video{background-image:url(../img/product/card/video-img.webp)}
 }
 
