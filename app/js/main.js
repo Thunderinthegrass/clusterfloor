@@ -163,3 +163,20 @@ function tabs() {
   tab(tabItem, tabNavItem);
 }
 tabs();
+
+function productUsePhotosViewMore() {
+  const viewMoreBtn = document.querySelector('.view-more-btn');
+  const productUseInnerHidden = document.querySelector('.product-use__inner_hidden');
+  
+  viewMoreBtn.addEventListener('click', () => {
+    productUseInnerHidden.classList.toggle('d-none');
+
+    if(productUseInnerHidden.classList.contains('d-none')) {
+      viewMoreBtn.innerHTML = 'Показать ещё';
+    }
+    else{
+      viewMoreBtn.innerHTML = 'Скрыть';
+    }
+  })
+}
+// productUsePhotosViewMore();
