@@ -7300,6 +7300,129 @@ h2 {
   background-image: url(../img/svg/header/banner/param3-2.svg) !important;
 }
 
+.contacts__title_txt, .visit__title_txt {
+  font-family: "RebelTypeDog";
+  font-size: 76px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  white-space: nowrap;
+  margin-bottom: 46px;
+}
+
+.gallery__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: no wrap;
+      flex-wrap: no wrap;
+  padding: 0 4px;
+}
+
+.gallery img {
+  display: block;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.gallery {
+  display: inline-block;
+}
+
+.visit__showroom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 4%;
+}
+
+.visit__showroom-row p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+#visit__showroom-txt1 {
+  width: 80%;
+}
+
+#visit__showroom-txt4 {
+  width: 80%;
+}
+
+#visit__showroom-txt2 {
+  width: 85%;
+}
+
+#visit__showroom-txt3 {
+  width: 80%;
+}
+
+.visit__showroom-row img {
+  display: inline-block;
+}
+
+.contacts__title_txt {
+  font-family: "RebelTypeDog";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  color: #FBFBFB;
+  padding-top: 5.5%;
+}
+
+.visit__title_txt {
+  font-family: "RebelTypeDog";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  color: #FBFBFB;
+  padding-top: 10%;
+}
+
+.address_row-column {
+  width: 100%;
+}
+
+.address_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 4%;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FBFBFB;
+}
+
+.address_row a {
+  color: #f7f5f2;
+  display: inline-block;
+}
+
+.address__text {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 47px;
+}
+
+.address__phone {
+  margin-top: 9%;
+}
+
 .compound__title {
   padding-top: 124px;
   font-weight: 400;

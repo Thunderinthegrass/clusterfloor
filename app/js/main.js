@@ -179,4 +179,4 @@ function productUsePhotosViewMore() {
     }
   })
 }
-// productUsePhotosViewMore();
+productUsePhotosViewMore();
