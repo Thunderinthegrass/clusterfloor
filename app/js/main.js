@@ -177,6 +177,7 @@ function productUsePhotosViewMore() {
     else{
       viewMoreBtn.innerHTML = 'Скрыть';
     }
+    console.log('ggg');
   })
 }
 productUsePhotosViewMore();
